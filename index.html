@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Link to my css stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Link to my js script -->
-    <script src="script.js"></script>
 
     <title>Bradley's web portfolio</title>
 </head>
-
 <body id="home" style="padding-top: 70px;">
-    <!-- NAVBAR -->
+<!-- links 
+https://github.com/dantasbradley
+https://www.linkedin.com/in/bradley-dantas-985958192/
+
+-->
+
+    <!-- FIXED NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Bradley Dantas</a>
@@ -30,26 +32,27 @@
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#home">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#home">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#home">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#home">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <nav class="top-nav" id="home">
+    <!-- social navbar -->
+    <nav class="social-nav">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-auto">
+        <div class="row justify-content-start">
+          <div class="col">
             <p>
               <i class="fas fa-envelope"></i>
               <span>dantasbradley@gmail.com</span>
@@ -58,113 +61,117 @@
               <i class="fas fa-phone fa-flip-horizontal"></i>
               <span>(407) 990-4333</span>
             </p>
-          </div>
 
-          <div class="col-auto">
             <div class="social-links">
-              <a href=""><i class="fab fa-github"></i></a>
-              <a href=""><i class="fab fa-linkedin"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/dantasbradley"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/bradley-dantas-985958192/"><i class="fab fa-linkedin"></i></a>
+              <!-- <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a> -->
             </div>
+            
           </div>
         </div>
       </div>
     </nav>
 
     <!-- PROFILE -->
-    <div class="profile" style="padding-top: 30px;">
-      <div class="pfp-container">
-        <img src="img/IMG_4119.jpg" alt="Bradley Dantas profile picture">
-      </div>
-      <div class="profile-text">
-        <p class="p1"> Hello, I'm</p>
-        <p class="big-name"> Bradley Dantas</p>
-        <p class="student"> UF Junior in Computer Science</p>
-        <button>Download Resume</button>
+    <div class="container my-5">
+      <div class="row gy-2 align-items-center">
+        <div class="col-md-6 text-center text-md-end">
+          <img src="img/IMG_4119.jpg" alt="" style="max-height: 350px; width: auto; border-radius: 30%;">
+        </div>
+        <div class="col-md-6 text-center" style="padding-right: 10%;">
+          <p>Hello, I'm</p>
+          <h4>Bradley Dantas</h4>
+          <p class="student"> UF Junior in Computer Science</p>
+          <button>Download Resume</button>
+        </div>
       </div>
     </div>
 
     <!-- ABOUT ME -->
-    <div>
-      <div class="title">
+    <div class="container my-5" id="about">
+      <div class="title text-center">
         <h1>About Me</h1>
       </div>
-    </div>
-    <div class="about-me" style="padding-top: 30px;">
-      <div class="pic-container">
-        <img src="img/aboutme.jpeg" alt="Bradley Dantas profile picture">
-      </div>
-      <div class="about-me-text">
-        <p class="p1"> 
-          I'm a committed student at UF, driven by my passion for software development. With experience in both front-end and back-end development, I offer a versatile skill set. I thrive on continuous learning and teamwork, attributes that make me a meaningful asset to any software development team.
-        </p>
-      </div>
-    </div>
-    <!-- hobby section -->
-    <div class="hobby-container">
-      <!-- hobby text -->
-      <div class="hobby-text">
-        <!-- <p> <span class="big">Hobbies:</span><span class="extra-space"></span> -Brazilian Jiu Jitsu<span class="extra-space"></span> -Board games<span class="extra-space"></span> -Programming <span class="extra-space"></span> -Working out<span class="extra-space"></span> -Reading manga</p> -->
-        <h3>My Hobbies</h3>
-        <ul>
-            <li>Brazilian Jiu Jitsu</li>
-            <li>Board games</li>
-            <li>Programming</li>
-            <li>Working out</li>
-            <li>Reading manga</li>
-        </ul>
-        <h3>My fluent languages</h3>
-        <ul>
-            <li>English</li>
-            <li>Portuguese</li>
-        </ul>
-        <!-- <p> <span class="big">Fluent languages:</span><span class="extra-space"></span> -English<span class="extra-space"></span> -Portuguese</p> -->
-      </div>
-      <!-- hobby slideshow -->
-      <div class="slideshow-container">
-        <div class="slide">
-            <img src="img/jiu.jpg" alt="Image 1">
+      <div class="row gy-2">
+        <div class="col-md-5 col-xl-3 text-center text-md-end">
+          <img class="rounded-circle" style="max-height: 350px; width: auto;" src="img/aboutme.jpeg" alt="Bradley Dantas profile picture">
         </div>
-        <div class="slide">
-            <img src="img/unicorn.jpg" alt="Image 2">
+        <div class="col-md-7 col-xl-5 mt-md-5 d-flex justify-content-center">
+          <p style="width: 80%;">
+            I'm a committed student at UF, driven by my passion for software development. With experience in both front-end and back-end development, I offer a versatile skill set. I thrive on continuous learning and teamwork, attributes that make me a meaningful asset to a software development team.
+          </p>
         </div>
-        <div class="slide">
-            <img src="img/workout.jpg" alt="Image 3">
-        </div>
-      </div>
+        <div class="col-xl-4">
+          <!-- hobby section -->
+          <div class="hobby-container">
+            <!-- hobby text -->
+            <div class="hobby-text">
+              <!-- <p> <span class="big">Hobbies:</span><span class="extra-space"></span> -Brazilian Jiu Jitsu<span class="extra-space"></span> -Board games<span class="extra-space"></span> -Programming <span class="extra-space"></span> -Working out<span class="extra-space"></span> -Reading manga</p> -->
+              <h5>My Hobbies</h5>
+              <ul>
+                  <li>Brazilian Jiu Jitsu</li>
+                  <li>Board games</li>
+                  <li>Programming</li>
+                  <li>Working out</li>
+                  <li>Reading manga</li>
+              </ul>
+              <h5>My fluent languages</h5>
+              <ul>
+                  <li>English</li>
+                  <li>Portuguese</li>
+              </ul>
+              <!-- <p> <span class="big">Fluent languages:</span><span class="extra-space"></span> -English<span class="extra-space"></span> -Portuguese</p> -->
+            </div>
+            <!-- hobby slideshow -->
+            <div class="slideshow-container">
+              <div class="slide">
+                  <img src="img/jiu.jpg" alt="Image 1">
+              </div>
+              <div class="slide">
+                  <img src="img/unicorn.jpg" alt="Image 2">
+              </div>
+              <div class="slide">
+                  <img src="img/workout.jpg" alt="Image 3">
+              </div>
+            </div>
 
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- MY SKILLS -->
-    <div>
+    <div class="container my-5" id="skills">
       <div class="title">
         <h1>My Skills</h1>
       </div>
-    </div>
-    <div class="container">
-      <div class="row align-items-center justify-content-center gx-5">
-        <div class="col-sm-12 col-md-4 border">
-          <h6>front-end</h6>
+      <div class="row align-items-center justify-content-center align-items-stretch border border-primary border-1">
+        <div class="col-md-4 p-0 border border-primary">
+          <h5 class="border border-3 border-secondary p-1 px-2">Front-End</h5>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Typescript</li>
-            <li>Angular</li>
-            <li>Bootstrap</li>
+            <li>HTML - intemediate</li>
+            <li>CSS - intermediate</li>
+            <li>Typescript- intermediate</li>
+            <li>Angular - intermediate</li>
+            <li>Bootstrap - intermediate</li>
           </ul>
 
         </div>
-        <div class="col-sm-12 col-md-4 border">
-          <h6>back-end</h6>
+        <div class="col-md-4 p-0 border border-primary">
+          <h5 class="border border-3 border-secondary p-1 px-2">Back-End</h5>
           <ul>
-            <li>C++</li>
-            <li>Java</li>
-            <li>PHP</li>
+            <li>C++ - advanced</li>
+            <li>Java - intermediate</li>
+            <li>PHP - (intermediate)</li>
+            <li>MySQL - basic</li>
+            <li>Python - familiar</li>
           </ul>
         </div>
-        <div class="col-sm-12 col-md-4 border">
-          <h6>other</h6>
+        <div class="col-md-4 p-0 border border-primary">
+          <h5 class="border border-3 border-secondary p-1 px-2">Others</h5>
           <ul>
             <li>GitHub</li>
             <li>VScode</li>
@@ -176,70 +183,113 @@
     </div>
 
     <!-- MY PROJECTS -->
-    <div>
-      <div class="title">
-        <h1>My Projects</h1>
+    <div class="container" id="projects">
+      <div>
+        <div class="title">
+          <h1>My Projects</h1>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 border">
-          <div>insert pic</div>
-          <h6>GatorXYZ | group project</h6>
-          <div>description...</div>
-          <div>tech used...</div>
-          <button>github</button>
-          <button>video</button>
+
+      <div class="row align-items-stretch gy-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">GatorXYZ -- group project</h5>
+              <p class="card-text">Tech used: </p>
+              <p class="card-text">Description: </p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Github</a>
+              <a href="#" class="card-link">Video</a>
+            </div>
+          </div>
+
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 border">
-          <h6>Olympamatic | group project</h6>
-          <div>description...</div>
-          <div>tech used...</div>
-          <button>github</button>
-          <button>video</button>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Olympamatic -- group project</h5>
+              <p class="card-text">Tech used: </p>
+              <p class="card-text">Description: </p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Github</a>
+              <a href="#" class="card-link">Video</a>
+            </div>
+          </div>
+
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 border">
-          <h6>Finish E-commerce... | solo project</h6>
-          <div>description...</div>
-          <div>tech used...</div>
-          <div>demo account...</div>
-          <button>github</button>
-          <button>video</button>
-          <button>live demo</button>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce -- solo project</h5>
+              <p class="card-text">Tech used: </p>
+              <p class="card-text">Description: </p>
+              <p class="card-text">Demo account: </p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Github</a>
+              <a href="#" class="card-link">Video</a>
+              <a href="#" class="card-link">Live Demo</a>
+            </div>
+          </div>
+
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 border">
-          <h6>Terminal Pokemon | solo project</h6>
-          <div>description...</div>
-          <div>tech used...</div>
-          <button>github</button>
-          <button>video</button>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Terminal pokemon -- solo project</h5>
+              <p class="card-text">Tech used: </p>
+              <p class="card-text">Description: </p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Github</a>
+              <a href="#" class="card-link">Video</a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 border">
-          <h6>Do python project...</h6>
-          <div>description...</div>
-          <div>tech used...</div>
-          <button>github</button>
-          <button>video</button>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Python... -- group project</h5>
+              <p class="card-text">Tech used: </p>
+              <p class="card-text">Description: </p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Github</a>
+              <a href="#" class="card-link">Video</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Minesweeper -- solo project</h5>
+              <p class="card-text">Tech used: </p>
+              <p class="card-text">Description: </p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Github</a>
+              <a href="#" class="card-link">Video</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
     <!-- CONTACT -->
-    <div>
+    <div class="container" id="contact">
       <div class="title">
         <h1>Contact Me</h1>
       </div>
     </div>
-    <div class="about-me">
-      <div class="about-me-text">
-        <p class="p1"> 
-          gmail: 
-          Linkedin: 
-          phone number: 
-        </p>
-      </div>
-    </div>
     
-
+    <!-- link to bootstrap js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Link to my js script -->
+    <script src="script.js"></script>
 </body>
 </html>

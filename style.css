@@ -1,38 +1,37 @@
-body{
-    line-height: 1.7;
-    color:#516171;
-    background-color: #FFFFFF !important;;
+/* Adjust the scroll position to account for the fixed navbar */
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; /* Adjust this value to match the height of your fixed navbar */
+    margin: -80px 0 0; /* Negative margin to compensate for the fixed navbar */
 }
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 700 !important;
-    color:black;
-}
+
+
 a {
-    color:black;
     text-decoration: none;
-    font-weight: 500;
 }
 img {
     width: 100%;
 }
 
-/* navbar */
-.top-nav{
+
+
+
+/* social navbar */
+.social-nav{
     background-color: blueviolet;
     padding-top: 5px;
     padding-bottom: 5px;
 
 }
-.top-nav p {
+.social-nav p {
     margin-bottom: 0;
-    display: inline-block;
-    margin-right: 16px;
-    color: white;
+ 
 }
-.top-nav i,
-.top-nav span{
+/* .social-nav i,
+.social-nav span{
     vertical-align: middle;
-}
+} */
 .social-links a{
     width: 34px;
     height: 34px;
@@ -48,6 +47,8 @@ img {
     background-color: white;
     color: blueviolet;
 }
+
+/* fixed navbar */
 .navbar {
     top: 0px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.08);
@@ -62,65 +63,7 @@ img {
     color: blueviolet;
 }
 
-/* button */
-.btn{
-    padding: 9px 24px;
-}
-.btn-brand {
-    background-color: blueviolet;
-    color: white;
-    border-color: blueviolet;
-}
-
 /* profile */
-.profile{
-    display:flex;
-    justify-content: center;
-    height: 400px;
-}
-.pfp-container{
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 300px;
-    flex: 1;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-left: 10%;
-
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: blue; */
-}
-.pfp-container img{
-    width: min-content;
-    max-height: 100%;
-    border-radius: 30%;
-    object-fit: contain;
-
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: red; */
-
-}
-.profile-text{
-    height: 300px;
-    display: flex;
-    padding-right: 10%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: red; */
-}
-.big-name{
-    font-size: 22px;
-    font-weight: 700 !important;
-    color:black;
-}
 .student{
     font-size: 19px;
     font-weight: 400 !important;
@@ -133,52 +76,6 @@ img {
     align-items: center;
     justify-content: center;
 }
-
-.about-me{
-    display:flex;
-    justify-content: center;
-    height: 400px;
-}
-.pic-container{
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 300px;
-    flex: 1;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-left: 10%;
-
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: blue; */
-}
-.pic-container img{
-    width: min-content;
-    max-height: 100%;
-    height: min-content;
-    border-radius: 50%;
-    object-fit: contain;
-
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: red; */
-
-}
-.about-me-text{
-    height: 300px;
-    display: flex;
-    padding-right: 10%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 3;
-
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: red; */
-}
-
 
 .extra-space {
     margin-right: 30px;
@@ -198,31 +95,6 @@ img {
     border-color: grey;
 }
 
-/* slideshow */
-/* .slideshow-container {
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 100px;
-
-    border-width: 2px;
-    border-style: solid;
-    border-color: grey;
-}
-.slide img{
-    max-width: 100%;
-    height: auto;
-
-    border-width: 2px;
-    border-style: solid;
-    border-color: pink;
-} */
-
-
-/* .slide img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-} */
 
 .hobby-container{
     display: flex;
