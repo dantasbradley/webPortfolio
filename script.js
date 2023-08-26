@@ -19,3 +19,19 @@ function showSlides() {
 }
 
 window.onload = showSlides;
+
+
+
+// Get all navigation links
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+// Add click event listener to each navigation link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Find the navigation menu element and collapse it
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    }
+  });
+});

@@ -2,8 +2,8 @@
 :target::before {
     content: "";
     display: block;
-    height: 80px; /* Adjust this value to match the height of your fixed navbar */
-    margin: -80px 0 0; /* Negative margin to compensate for the fixed navbar */
+    height: 70px; /* Adjust this value to match the height of your fixed navbar */
+    margin: -70px 0 0; /* Negative margin to compensate for the fixed navbar */
 }
 
 
@@ -22,16 +22,14 @@ img {
     background-color: blueviolet;
     padding-top: 5px;
     padding-bottom: 5px;
-
 }
 .social-nav p {
     margin-bottom: 0;
- 
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
 }
-/* .social-nav i,
-.social-nav span{
-    vertical-align: middle;
-} */
+
 .social-links a{
     width: 34px;
     height: 34px;
@@ -68,6 +66,12 @@ img {
     font-size: 19px;
     font-weight: 400 !important;
     color:grey;
+}
+
+@media (min-width: 990px) {
+    .profile-padding {
+        padding-right: 10%;
+    }
 }
 
 /* about me */
