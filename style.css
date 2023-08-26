@@ -115,4 +115,16 @@ img {
     max-height: 400px;
 }
 
-
+/* skills */
+@media (min-width: 768px) {
+    .border-md-y{
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+}
+@media (max-width: 767px) {
+    .border-sm-x {
+        border-left: 2px solid;
+        border-right: 2px solid;
+    }
+}
