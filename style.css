@@ -128,3 +128,7 @@ img {
         border-right: 2px solid;
     }
 }
+/* projects */
+.card-border{
+    border-width: 3px;
+}
